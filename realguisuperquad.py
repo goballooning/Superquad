@@ -21,13 +21,13 @@ def tens_fld(A,B,C,P,Q):
     return x , y , z 
 
 
-from enthought.traits.api import HasTraits, Range, Instance, \
+from traits.api import HasTraits, Range, Instance, \
                     on_trait_change
-from enthought.traits.ui.api import View, Item, HGroup
-from enthought.tvtk.pyface.scene_editor import SceneEditor
-from enthought.mayavi.tools.mlab_scene_model import \
+from traitsui.api import View, Item, HGroup
+from tvtk.pyface.scene_editor import SceneEditor
+from mayavi.tools.mlab_scene_model import \
                     MlabSceneModel
-from enthought.mayavi.core.ui.mayavi_scene import MayaviScene
+from mayavi.core.ui.mayavi_scene import MayaviScene
 
 
 class Visualization(HasTraits):
